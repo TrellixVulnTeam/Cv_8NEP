@@ -1,0 +1,66 @@
+<%- include('head') %>
+<link rel="stylesheet" type="text/css" href="/CSS/works.css">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+
+
+</head>
+<body>
+<%- include('header')%>
+<div class="container">
+    <div class="container-body">
+        <div class="row">
+            <%- include('slidenav')%>
+            <div class="col-lg-10 works">
+                <h1>Projec before</h1>
+                <hr>
+                <div class="row">
+                    <div class="col-md-6 wow bounceInLeft"
+                         style="visibility: visible; animation-name: bounceInLeft;">
+                        <div class="image-container">
+                            <img src="../Image/shale-piza.png" style="border-radius: 41rem;width: 43rem;">
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 text-center wow slideInRight"
+                         style="visibility: visible; animation-name: slideInRight;">
+                        <span style="font-family: 'Tangerine', cursive;color: #F2B410;font-size: 80px;">Discover</span>
+                        <h2 class="section-title">OUR Shale-Pizzaass</h2>
+                        <p>Is a child from the land of Kong, with the desire to always try to develop himself. I always search for and change myself the latest.</p>
+                        <a href="https://shale-pizzaasss.herokuapp.com/" class="btn btn-yellow sans-serif">OUR Pizzaass</a>
+                    </div>
+                </div>
+                <div class="background-icon">
+                            <div class="row">
+                                <div class="col-md-6 text-center wow slideInLeft">
+                                    <p><h4 style="font-family: 'Tangerine', cursive;color: #F2B410;font-size:5rem">Thanks for reading !!! </h4><br/>
+                                        Have a good day ^^!</p>
+                                </div>
+                                <div class="col-md-6 wow lightSpeedInLeft">
+                                    <div>
+                                        <img id="icon" class="ship-hang"
+                                             src="../Image/giaohang.jpg">
+                                    </div>
+                                </div>
+                            </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+<script type="text/javascript">
+    new WOW().init();
+</script>
+<script>
+
+    var boxnav = $('.box-nav');
+    window.addEventListener('scroll', () => {
+        if (boxnav.offset().top <= 100) {
+            boxnav.css('position', 'fixed');
+        } else boxnav.css('top', '15rem');
+
+    });
+
+</script>

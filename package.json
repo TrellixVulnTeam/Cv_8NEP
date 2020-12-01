@@ -4,14 +4,24 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "sass": "node-sass public/SASS/home.sass public/CSS/home.css -w"
+    "about": "node-sass public/SASS/about.sass public/CSS/about.css",
+    "interests": "node-sass public/SASS/interests.sass public/CSS/interests.css",
+    "works": "node-sass public/SASS/works.sass public/CSS/works.css",
+    "resume": "node-sass public/SASS/resume.sass public/CSS/resume.css",
+    "slidenav": "node-sass public/SASS/slidenav.sass public/CSS/slidenav.css"
   },
   "engines": {
     "node": "12.x"
   },
   "author": "",
   "license": "ISC",
-  "dependencies": {},
+  "dependencies": {
+    "animate.css": "^4.1.1",
+    "bootstrap": "^3.4.1",
+    "ejs": "^3.1.5",
+    "express": "^4.17.1",
+    "install": "^0.13.0"
+  },
   "devDependencies": {
     "node-sass": "^5.0.0"
   }

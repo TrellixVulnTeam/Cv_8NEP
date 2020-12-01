@@ -1,0 +1,91 @@
+*
+  margin: 0
+  padding: 0
+
+$font : 'Poppins', sans-serif
+$color-icon : #304cfd
+
+@mixin btn-hover
+  transition: 0.3s
+  opacity: 1
+  -ms-transform: rotate(360deg)
+  transform: rotate(360deg)
+  transition-duration: 2s
+
+body
+  background-image: url("../Image/backgroup.jpg")
+  background-size: cover
+.container
+  font-family: 'Poppins', sans-serif
+
+.header-box
+  border-radius: 40px
+  background-color: white
+  margin-top: 12rem
+
+  .header__left
+    display: flex
+    .avata
+      box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.05)
+      position: relative
+      img
+        width: 195px
+        height: 201px
+        border-radius: 4rem
+        margin-left: 2rem
+        margin-top: -2rem
+    .info
+      margin-left: 10px
+      ul
+        padding: 5px
+        display: flex
+        list-style: none
+        li
+          padding: 5px
+  .header__right
+
+    ul
+      margin: 5px
+      float: left
+      padding: 5px
+      list-style: none
+      li
+        padding: 5px
+        .overhead
+          color: gray
+.container
+  .container-body
+    padding: 20px
+    .about
+      background-color: white
+      margin-top: 1.5rem
+      border-radius: 2rem
+      padding: 2rem
+      .about__me
+        hr
+          width: 23rem
+          color : $color-icon
+      .about__doing
+        ul
+          padding: 0.5rem
+          list-style: none
+          display: flex
+          text-align: center
+          li
+            color: white
+            margin: 0rem 2rem
+            padding: 4rem
+            height: 186px
+            width: 358px
+            border: 3px solid gray
+            border-radius: 2rem
+            background-color: gray
+            box-shadow: 3px 3px 3px #00000059
+      .about__language
+        .carousel-inner
+          ul
+            display: flex
+
+
+
+

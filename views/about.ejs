@@ -1,0 +1,86 @@
+<%- include('head') %>
+
+</head>
+<body>
+<%- include('header')%>
+<div class="container">
+    <div class="container-body">
+        <div class="row">
+            <%- include('slidenav')%>
+            <div class="col-lg-10 about">
+               <div class="about__me">
+                <h1> About Me </h1><hr>
+                <p>First of all, thank you company for reading my CV, I am a student studying fpt-apptech to pursue my programming dream.<br/><br/>
+                    With the desire to be creative and study in a large and professional environment, I would like to apply my cv to the internship position of the company.<br/><br/>
+                    <i>Thank companies</i></p>
+               </div>
+                <div class="about__doing">
+                    <h2>I'm Doing</h2>
+                    <br/>
+                    <div class="box about__doing">
+                        <ul>
+                            <li>
+                                <div id="school"><h3>School</h3><p>Studying at FPT-Aptech </p></div>
+                            </li>
+                            <li>
+                                <div class="text"><h3>Chef</h3><p>Used to be a chef to cook Japanese dishes</p></div>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <div class="text"><h3>Learning wed</h3><p>What I know is basic, I hope to develop more in the company</p></div>
+                            </li>
+                            <li>
+                                <div class="text"><h3> Iphone apple</h3><p>I know a little bit about apple</p></div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="about__language">
+                    <h2>Programming language</h2>
+                  <br/>
+                    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-interval="100">
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner" role="listbox">
+                            <div class="item active">
+                                <ul>
+                                    <li><img src="../Image/html.png" width="284px" height="284px"></li>
+                                    <li><img src="../Image/css.png" width="284px" height="284px"></li>
+                                    <li> <img src="../Image/js.png" width="284px" height="284px"></li>
+                                </ul>
+                            </div>
+                            <div class="item">
+                                <ul>
+                                    <li> <img src="../Image/bootstrap.png" width="284px" height="284px"></li>
+                                    <li> <img src="../Image/jquery.png" width="284px" height="284px"></li>
+                                    <li> <img src="../Image/sass.png" width="284px" height="284px"></li>
+                                </ul>
+
+
+                            </div>
+
+                        </div>
+
+                    </div>
+            </div>
+        </div>
+        </div>
+    </div>
+</div>
+<script>
+    $('.carousel').carousel({
+        interval: 1500
+    })
+</script>
+<script>
+
+    var boxnav = $('.box-nav');
+    window.addEventListener('scroll', () => {
+        if (boxnav.offset().top <= 100) {
+            boxnav.css('position', 'fixed');
+        } else boxnav.css('top', '15rem');
+
+    });
+
+</script>
+</body>
