@@ -8,7 +8,7 @@
     <div class="container-body">
         <div class="row">
             <%- include('slidenav')%>
-            <div class="col-lg-10 resume" style="background-color: white;border-radius: 2rem;padding :2rem;margin-top: 1.5rem">
+            <div class="col-10 resume" style="background-color: white;border-radius: 2rem;padding :2rem;margin-top: 1.5rem">
                 <div class="resume__time" style="display: flex">
                 <i class="fas fa-graduation-cap" style="font-size: 5rem"></i><h2 style="margin-left: 1rem">Education</h2>
                 </div>
@@ -70,6 +70,15 @@
                                 </p>
                             </div>
                         </li>
+                        <li>
+                            <div class="noi_dung">
+                                <h3>Developer front end</h3>
+                                <h8><u>2021-2022</u></h8>
+                                <p>
+                                    Research and development.
+                                </p>
+                            </div>
+                        </li>
                         <div style="clear:both"></div>
                     </ul>
                 </div>
@@ -80,12 +89,12 @@
 </div>
 <script>
 
-    var boxnav = $('.box-nav');
-    window.addEventListener('scroll', () => {
-        if (boxnav.offset().top <= 100) {
-            boxnav.css('position', 'fixed');
-        } else boxnav.css('top', '15rem');
+    // var boxnav = $('.box-nav');
+    // window.addEventListener('scroll', () => {
+    //     if (boxnav.offset().top <= 100) {
+    //         boxnav.css('position', 'fixed');
+    //     } else boxnav.css('top', '15rem');
 
-    });
+    // });
 
 </script>

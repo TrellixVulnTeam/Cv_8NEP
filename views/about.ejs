@@ -7,7 +7,7 @@
     <div class="container-body">
         <div class="row">
             <%- include('slidenav')%>
-            <div class="col-lg-10 about">
+            <div class="col-10 about">
                <div class="about__me">
                 <h1> About Me </h1><hr>
                 <p>First of all, thank you company for reading my CV, I am a student studying fpt-apptech to pursue my programming dream.<br/><br/>
@@ -43,22 +43,33 @@
                         <!-- Wrapper for slides -->
                         <div class="carousel-inner" role="listbox">
                             <div class="item active">
-                                <ul>
+                                <ul style="list-style-type: none;">
                                     <li><img src="../Image/html.png" width="284px" height="284px"></li>
                                     <li><img src="../Image/css.png" width="284px" height="284px"></li>
                                     <li> <img src="../Image/js.png" width="284px" height="284px"></li>
                                 </ul>
                             </div>
                             <div class="item">
-                                <ul>
+                                <ul style="list-style-type: none;">
                                     <li> <img src="../Image/bootstrap.png" width="284px" height="284px"></li>
                                     <li> <img src="../Image/jquery.png" width="284px" height="284px"></li>
                                     <li> <img src="../Image/sass.png" width="284px" height="284px"></li>
                                 </ul>
-
-
                             </div>
-
+                            <div class="item">
+                                <ul style="list-style-type: none;">
+                                    <li> <img src="../Image/laravel-featured.png" width="284px" height="284px"></li>
+                                    <li> <img src="../Image/mysql.png" width="284px" height="284px"></li>
+                                    <li> <img src="../Image/mongodb.png" width="284px" height="284px"></li>
+                                </ul>
+                            </div>
+                            <div class="item">
+                                <ul style="list-style-type: none;">
+                                    <li> <img src="../Image/NET_Core_Logo.png" width="284px" height="284px"></li>
+                                    <li> <img src="../Image/C.png" width="284px" height="284px"></li>
+                                    <li> <img src="../Image/java.png" width="284px" height="284px"></li>
+                                </ul>
+                            </div>
                         </div>
 
                     </div>
@@ -74,13 +85,13 @@
 </script>
 <script>
 
-    var boxnav = $('.box-nav');
-    window.addEventListener('scroll', () => {
-        if (boxnav.offset().top <= 100) {
-            boxnav.css('position', 'fixed');
-        } else boxnav.css('top', '15rem');
+    // var boxnav = $('.box-nav');
+    // window.addEventListener('scroll', () => {
+    //     if (boxnav.offset().top <= 100) {
+    //         boxnav.css('position', 'fixed');
+    //     } else boxnav.css('top', '15rem');
 
-    });
+    // });
 
 </script>
 </body>
