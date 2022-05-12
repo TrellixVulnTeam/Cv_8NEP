@@ -15,19 +15,19 @@ const bodyparser = require("body-parser");
 app.use(bodyparser.urlencoded({extended:true}));
 
 app.get('/', (req, res) => {
-    res.render('about');
+    res.render('home');
 });
-app.get('/about', (req, res) => {
-    res.render('about');
-});
-app.get('/resume', (req, res) => {
-    res.render('resume');
-});
-app.get('/works', (req, res) => {
-    res.render('works');
-});
-app.get('/interests', (req, res) => {
-    res.render('interests');
-});
+// app.get('/about', (req, res) => {
+//     res.render('about');
+// });
+// app.get('/resume', (req, res) => {
+//     res.render('resume');
+// });
+// app.get('/works', (req, res) => {
+//     res.render('works');
+// });
+// app.get('/interests', (req, res) => {
+//     res.render('interests');
+// });
 
 

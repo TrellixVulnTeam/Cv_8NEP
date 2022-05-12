@@ -1,0 +1,327 @@
+body{
+    background-color: #f8f9fa;
+}
+.avata{
+    margin-bottom: 20px;
+}
+.nava{
+    background-color: black;
+}
+.name-title{
+    color: #FFF;
+    font-size: 36px;
+    font-weight: bold;
+    font-family: 'Oleo Script Swash Caps', cursive;
+}
+#Name{
+    animation-name: fadeInUps;
+    animation-duration: 1s;
+}
+.dot-title{
+    font-size: 81px;
+    color: red;
+    position: relative;
+    right: 10px;
+    top: 3px;
+}
+.box-menu ul{
+    display: flex;
+    justify-content: space-between;
+    width: 93%;
+    list-style-type: none;
+}
+
+
+.box-menu ul li{
+    margin-top: 20px;
+    font-size: 20px;
+    text-align: center;
+    cursor: pointer;
+    /* color: white; */
+}
+.box-menu ul li span{
+    margin-left: 10px;
+    font-weight: bold;
+    color: white;
+}
+.box-menu ul li i{
+    margin-left: 10px;
+    color: #FFD15C;
+}
+/* dashboard */
+.dashboard{
+    /* height: 70%; */
+    padding-bottom: 10%;
+    padding-top: 10%;
+    text-align: center;
+    background-color: black;
+}
+.description-dashboard{
+    padding-top: 20px;
+    visibility: visible;
+     animation-name: bounce;
+     color: #FFF;
+    font-size: 20px;
+}
+.btn-navContact button{
+    color: #FFF;
+    background: #FF4C60;
+    padding: 10px 30px 10px 30px;
+    border-radius: 20px;
+    font-size: 20px;
+}
+.list-contact{
+    display: flex;
+    justify-content: center;
+    font-size: 35px;
+    cursor: pointer;
+}
+.list-contact *{
+    color: #FFF;
+    margin: 10px;
+}
+/* about */
+.introduce{
+    width: 50%;
+    text-align: center;
+    padding-top: 26px;
+}
+.skill{
+    width: 50%;
+    padding-left: 10px;
+  
+}
+.box-talk{
+    display: flex;
+}
+.about-talk-box{
+    padding: 10px;
+    background-color: #f8f9fa;
+    border-radius: 20px;
+    box-shadow: 0px 5px 20px 0px rgb(38 15 22 / 50%);
+    visibility: visible;
+    animation-name: bounceInRight;
+}
+.images-about{
+    visibility: visible;
+    animation-name: bounceInLeft;
+}
+.header-title{
+    font-size: 36px;
+    font-weight: bold;
+    padding: 30px;
+    font-family: 'Lobster', cursive;
+}
+.introduce button{
+    margin-top: 30px;
+    color: #FFF;
+    background: #FF4C60;
+    padding: 10px 30px 10px 30px;
+    border-radius: 20px;
+    font-size: 20px;
+}
+/* services */
+.content-services{
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    padding: 20px;
+    height: 306px;
+}
+.logo-services{
+    font-size: 50px;
+    /* color: white; */
+}
+.title-services{
+    font-size: 20px;
+    font-weight: bold;
+}
+.description-services{
+    font-size: 18px;
+}
+.box-content-services{
+    width: 30%;
+    transition: .5s;
+    padding: 30px;
+    border-radius: 20px !important;
+    cursor: pointer;
+}
+/* .box-content-services:hover{
+    transform: rotateY(1.2);
+} */
+
+.webApplication {
+    cursor: pointer;
+}
+.s-1{
+    background-color: rgb(249, 215, 76);
+    box-shadow: 0px 5px 20px 0px rgb(249 215 76 / 50%);
+
+}
+.s-2{
+    background-color: rgb(249, 123, 139);
+    color: white;
+    box-shadow: 0px 5px 20px 0px rgb(249 123 139 / 50%);
+}
+.s-3{
+    background-color: rgb(108, 108, 229);
+    box-shadow: 0px 5px 20px 0px rgb(108 108 229 / 50%);
+    color: white;
+}
+/* Experience */
+ul.timeline {
+    list-style-type: none;
+    position: relative;
+}
+ul.timeline:before {
+    content: ' ';
+    background: #d4d9df;
+    display: inline-block;
+    position: absolute;
+    left: 29px;
+    width: 2px;
+    height: 100%;
+    z-index: 400;
+}
+ul.timeline > li {
+    margin: 20px 0;
+    padding-left: 20px;
+}
+ul.timeline > li:before {
+    content: ' ';
+    background: white;
+    display: inline-block;
+    position: absolute;
+    border-radius: 50%;
+    border: 3px solid #22c0e8;
+    left: 20px;
+    width: 20px;
+    height: 20px;
+    z-index: 400;
+}
+/* work */
+.title-filter{
+    margin-bottom: 20px;
+}
+
+.title-filter .filter{
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 20px;
+    cursor: pointer;
+    color: black;
+    margin-bottom: 20px;
+}
+
+#everything{
+    color: red;
+}
+.content-app{
+    height: 200px;
+    background-color: antiquewhite;
+    text-align: center;
+    border-radius: 60px;
+    transition: height 2s;
+    margin-bottom: 30px;
+}
+
+.tag-top{
+    width: 100px;
+    text-align: center;
+    border-radius: 60px 10px 30px 1px;
+    background-color: #ff000099;
+    font-size: 20px;
+    padding: 5px;
+    color: white;
+    position: absolute;
+    font-weight: bold;
+    display: none;
+    animation-name: fadeInDown;
+}
+.box-skill{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 200px;
+}
+.box-skill *{
+    transition: .2s;
+    margin-left: 2px;
+    width: 70px;
+    height: 70px;
+    border-radius: 26px;
+    animation-name: fadeInUp;
+}
+.box-skill *:hover{
+    transform: scale(1.5);
+}
+.box-skill img:hover{
+    opacity: 1;
+}
+.box-skill img{
+    opacity: 0.2;
+}
+.ranger{
+    text-align: center;
+    opacity: 0;
+    font-weight: bold;
+    font-size: 30px;
+    margin-top: 20px;
+}
+.profile-contact{
+    font-family: 'Fira Sans Condensed', sans-serif;
+    font-size: 20px;
+    padding: 40px;
+}
+.profile-contact *{
+    margin-top: 20px;
+}
+.images-modal{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 10px;
+}
+.modal-title{
+    font-size: 25px;
+    font-weight: bold;
+}
+.btn-submit-email{
+    color: #FFF;
+    background: #FF4C60;
+    padding: 10px 30px 10px 30px;
+    border-radius: 20px;
+    font-size: 20px;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 200px;
+    opacity: 0;
+    transition: .5s ease-in-out;
+    /* background-color: #c3a090; */
+    border-radius: 60px;
+  }
+
+  .webApplication:hover .overlay {
+    opacity: 1;
+  }
+  .webApplication:hover .content-app {
+    opacity: 0.3;
+  }
+
+  .text {
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
