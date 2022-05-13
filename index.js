@@ -1,6 +1,8 @@
+const favicon = require('serve-favicon');
 const express = require('express')
 const app = express();
 const PORT = process.env.PORT || 4000;
+// app.use(favicon(__dirname + '/favicon.ico'));
 
 // tao may chu
 app.listen(PORT, () => {
@@ -8,15 +10,20 @@ app.listen(PORT, () => {
 });
 // allow access & use of public resources`
 app.use(express.static('public'));
+
+// app.use(favicon(path.join(__dirname,'public','images','favicon.ico')));
+
 // allow ejs syntax: mix view & logic
 app.set('view engine', 'ejs');
 //use body-parser
 const bodyparser = require("body-parser");
 app.use(bodyparser.urlencoded({extended:true}));
+// app.get('/', (_, res)=> res.sendFile(__dirname + '/views/home/ejs'))
 
 app.get('/', (req, res) => {
     res.render('home');
 });
+
 // app.get('/about', (req, res) => {
 //     res.render('about');
 // });
